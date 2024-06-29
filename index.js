@@ -10,7 +10,7 @@ dotenv.config()
 const app = express();
 const PORT = process.env.PORT || 4000
 app.use(express.json())
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://mern-stack-real-state-app-client-oc40vkkl0.vercel.app" }));
 app.use(cookieParser());
 app.use((req, res, next) => {
     console.log(`Incoming request: ${req.method} ${req.url}`);
